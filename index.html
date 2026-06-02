@@ -1130,6 +1130,27 @@
                 transition-duration: 0.01ms !important;
             }
         }
+
+        .project-image {
+            display: block;
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            object-position: top center;
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 16px;
+            margin-bottom: 16px;
+            background:
+                linear-gradient(135deg, rgba(139, 92, 246, 0.16), rgba(6, 182, 212, 0.12)),
+                rgba(15, 23, 42, 0.92);
+            box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+        }
+
+        @media (max-width: 768px) {
+            .project-image {
+                height: 180px;
+            }
+        }
     </style>
 </head>
 
@@ -1176,7 +1197,6 @@
                         <a class="btn" href="#projetos" data-i18n="btnProjects">Ver Projetos</a>
                         <a class="btn secondary" href="https://github.com/alanealmada3-web" target="_blank" rel="noopener">GitHub</a>
                         <a class="btn secondary" href="https://www.linkedin.com/in/alane-de-almada-craveiro-martins-b6b93a292/" target="_blank" rel="noopener">LinkedIn</a>
-                        <a class="btn secondary" href="curriculo.pdf" download data-i18n="btnResume">Baixar Currículo</a>
                     </div>
                 </div>
 
@@ -1500,7 +1520,6 @@
                 heroSubtitle: "Desenvolvedora Full Stack em formação",
                 heroText: "Estudante de Ciência da Computação",
                 btnProjects: "Ver Projetos",
-                btnResume: "Baixar Currículo",
                 codeProfile: "\"Full Stack em formação\"",
                 codeGoal: "\"Estágio em TI\"",
                 statTech: "tecnologias",
@@ -1577,7 +1596,6 @@
                 heroSubtitle: "Full Stack Developer in training",
                 heroText: "Computer Science student",
                 btnProjects: "View Projects",
-                btnResume: "Download Resume",
                 codeProfile: "\"Full Stack in training\"",
                 codeGoal: "\"IT Internship\"",
                 statTech: "technologies",
